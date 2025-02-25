@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: url("../image/bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#para {
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+#addBtn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ffcc00;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background: #ffdb4d;
+}
+
+.todoList {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 15px;
+  padding-right: 5px;
+}
+
+.todoList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todoList::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.todoList li {
+  background: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.todoList li:hover {
+  background: #eaeaea;
+}
+
+.todoList li p {
+  flex: 1;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.todoList li .buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.editBtn {
+  color: #28a745;
+}
+
+.editBtn:hover {
+  color: #218838;
+}
+
+.deleteBtn {
+  color: #dc3545;
+}
+
+.deleteBtn:hover {
+  color: #c82333;
+}
