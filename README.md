@@ -1,53 +1,76 @@
-# TaskNDo
+# Tasketu
 
-TaskNDo is a simple, fast and user-friendly to do list application that allows you to **add, edit, delete and save** tasks using the browser's local storage. Stay organized and boost your productivity effortlessly!
+Tasketu is a sleek and user-friendly task management website designed to help users stay organized and productive. With a clean UI and intuitive functionality, Tasketu allows users to add, edit, delete, and mark tasks as complete—all in a few clicks.
 
 ## ✔️  Demo Screenshot
 
-![Screenshot of TaskNDo](assets/screenshot/screenshot.jpg)
+![Screenshot of TaskNDo](assets/screenshot/screenshot.png)
 
 ## 🔗 Live Demo
 
-Check out the app live here: **[TaskNDo](https://premkrrajbhar.github.io/TaskNDo/)**
+Check out the app live here: **[Tasketu](https://premkrrajbhar.github.io/Tasketu/)**
 
 ## 📋 Features
 
-- **Add New Tasks** to stay organized.
-- **Edit Existing Tasks** for modifications.
-- **Delete Tasks** when no longer needed.
-- **Save Tasks Automatically** using local storage.
+- Add new tasks with ease  
+- Edit existing tasks  
+- Delete tasks you no longer need  
+- Mark tasks as complete  
+- Save tasks with persistent storage (localStorage)  
+- Beautiful responsive layout with a modern gradient-based theme
 
 
 ## 🛠️ Technologies Used
 
-- **HTML** – Structure of the web page.
-- **CSS** – Styling for a modern UI.
-- **JavaScript** – Logic for managing tasks and local storage.
+- **HTML** Structure of the web page.
+- **BootStrap** Styling for a modern UI.
+- **CSS** for styling
+- **JavaScript** Logic for managing tasks and local storage.
+- **AOS library** for smooth animation when scrolling website.
+- **Font Awesome** implements icons for various UI elements.
+- **Random user generator** website for generating random profile pictures for the testimonial section.
+- **Flaticon** provides icons used in the home section.
+
 
 ## 🚀 How to Use
 
 - **Step 1:** Enter a new task in the input field.
 - **Step 2:** Click 'Add' to save it to the list.
-- **Step 3:** Click the 'Edit' button to modify a task.
-- **Step 4:** Click the 'Delete' button to remove a task.
-- **Step 5:** Tasks are automatically saved in the browser's local storage.
+- **Step 3:** Click the 'Edit' icon to modify a task.
+- **Step 4:** Click the 'Delete' icon to remove a task.
+- **Step 5:** Click the check icon to mark a task as finished.
 
 ## 📂 Project Structure
 
 ```
+├── LICENSE
 ├── README.md
-├── assets/
-│   ├── favicon/
-|   |   └── taskndo-favicon.png
-│   └── screenshot/
-│       └── screenshot.jpg
-├── css/
+├── assets
+│   ├── favicon
+│   │   └── tasketu-favicon.png
+│   ├── images
+│   │   ├── Testimonial-User
+│   │   │   ├── user-1.jpg
+│   │   │   ├── user-2.jpg
+│   │   │   ├── user-3.jpg
+│   │   │   ├── user-4.jpg
+│   │   │   ├── user-5.jpg
+│   │   │   ├── user-6.jpg
+│   │   │   ├── user-7.jpg
+│   │   │   └── user-8.jpg
+│   │   └── img-1.jpg
+│   ├── logo
+│   │   └── tasketu-logo.png
+│   ├── media
+│   │   └── tasketu-tutorial.mp4
+│   └── screenshot
+│       └── screenshot.png
+├── css
 │   └── style.css
-├── image/
-│   └── bg-img.jpg
 ├── index.html
-└── script/
+└── script
     └── script.js
+
 ```
 
 ## 📥 How to Run Locally
@@ -55,16 +78,22 @@ Check out the app live here: **[TaskNDo](https://premkrrajbhar.github.io/TaskNDo
 - Step 1: Clone the repository:
 
 ```bash
-   git clone https://github.com/premkrrajbhar/TaskNDo.git
+   git clone https://github.com/premkrrajbhar/Tasketu.git
 ```
 
 - Step 2: Navigate to the project folder:
 
 ```bash
-   cd TaskNDo
+   cd Tasketu
 ```
 
 - Step 3: Open the `index.html` file in your web browser to start using the app.
+
+
+## 📝LICENSE
+
+Tasketu is open-source software released under the MIT License. This means you are free to use, modify, and distribute the code as per the terms of the MIT license. See the [LICENSE](/LICENSE) file for more information.
+
 
 ## 🤝 Contributing
 
