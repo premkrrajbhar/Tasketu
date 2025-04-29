@@ -5,129 +5,150 @@ const warnPara = document.getElementById("warnPara");
 
 let editTodo = null;
 
-// Function to add todo
+// Add Todo Functionality
 addBtn.addEventListener("click", () => {
   const inputText = inputBox.value.trim();
 
   if (inputText.length === 0) {
     warnPara.innerText = "Please write something in your Todo!";
-    warnPara.style.fontWeight = "bold";
     return;
   }
 
   warnPara.innerText = "";
 
-  if (addBtn.value === "Save Edit") {
-    editLocalTodos(editTodo.target.previousElementSibling.innerHTML);
-    editTodo.target.previousElementSibling.innerHTML = inputText;
-    editLocalTodos(inputText);
-    addBtn.value = "Add";
+  // Save Edit Logic
+  if (addBtn.innerText === "Save Edit") {
+    const oldText = editTodo.querySelector("p").innerText;
+    const newText = inputText;
+
+    editTodo.querySelector("p").innerText = newText;
+    editLocalTodos(oldText, newText);
+
+    addBtn.innerText = "Add";
     inputBox.value = "";
-  } else {
-    const createdlistItemEle = document.createElement("li");
-
-    const createParaEle = document.createElement("p");
-    createParaEle.innerHTML = inputText;
-
-    createdlistItemEle.append(createParaEle);
-
-    todoList.append(createdlistItemEle);
-
-    const createdEditBtn = document.createElement("button");
-    createdEditBtn.innerText = "Edit";
-    createdEditBtn.classList.add("btn", "editBtn");
-    createdlistItemEle.append(createdEditBtn);
-
-    const createdDeleteBtn = document.createElement("button");
-    createdDeleteBtn.innerText = "Delete";
-    createdDeleteBtn.classList.add("btn", "deleteBtn");
-    createdlistItemEle.append(createdDeleteBtn);
-
-    todoList.append(createdlistItemEle);
-    inputBox.value = "";
-
-    saveLocalTodos(inputText);
+    editTodo = null;
+    return;
   }
+
+  // Create new to-do item
+  const li = document.createElement("li");
+  li.className = "list-group-item d-flex justify-content-between align-items-center";
+
+  const para = document.createElement("p");
+  para.className = "mb-0 flex-grow-1";
+  para.innerText = inputText;
+
+  const completeBtn = document.createElement("button");
+  completeBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
+  completeBtn.className = "btn btn-sm btn-outline-success me-2";
+
+  const editBtn = document.createElement("button");
+  editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
+  editBtn.className = "btn btn-sm btn-outline-primary me-2";
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
+  deleteBtn.className = "btn btn-sm btn-outline-danger";
+
+  li.appendChild(para);
+  li.appendChild(completeBtn);
+  li.appendChild(editBtn);
+  li.appendChild(deleteBtn);
+  todoList.appendChild(li);
+
+  saveLocalTodos(inputText, false);
+  inputBox.value = "";
 });
 
-// To update Todo i.e. edit and delete
+// Handle Edit/Delete/Complete
 todoList.addEventListener("click", (e) => {
-  if (e.target.innerHTML === "Delete") {
-    todoList.removeChild(e.target.parentElement);
-    deleteLocalTodos(e.target.parentElement);
+  const li = e.target.closest("li");
+  const para = li?.querySelector("p");
+
+  if (e.target.closest("button")?.innerHTML.includes("fa-trash")) {
+    const todoText = para.innerText;
+    todoList.removeChild(li);
+    deleteLocalTodos(todoText);
   }
 
-  if (e.target.innerHTML === "Edit") {
-    inputBox.value = e.target.previousElementSibling.innerHTML;
+  if (e.target.closest("button")?.innerHTML.includes("fa-pen")) {
+    editTodo = li;
+    inputBox.value = para.innerText;
     inputBox.focus();
-    addBtn.value = "Save Edit";
-    editTodo = e;
+    addBtn.innerText = "Save Edit";
+  }
+
+  if (e.target.closest("button")?.innerHTML.includes("fa-check")) {
+    para.classList.toggle("text-decoration-line-through"); // Apply strike-through
+    updateCompletedState(para.innerText, para.classList.contains("text-decoration-line-through"));
   }
 });
 
-// function for save todo in localstorage of browser
-const saveLocalTodos = (todo) => {
-  let todos = [];
-  if (localStorage.getItem("todos") === null) {
-    todos = [];
-  } else {
-    todos = JSON.parse(localStorage.getItem("todos"));
-  }
-  todos.push(todo);
-
+// LocalStorage functions
+const saveLocalTodos = (todo, isCompleted = false) => {
+  let todos = JSON.parse(localStorage.getItem("todos")) || [];
+  todos.push({ text: todo, completed: isCompleted });
   localStorage.setItem("todos", JSON.stringify(todos));
 };
 
-// To show localstorage of todo
 const getLocalTodos = () => {
-  let todos = [];
-  if (localStorage.getItem("todos") === null) {
-    todos = [];
-  } else {
-    todos = JSON.parse(localStorage.getItem("todos"));
-    todos.forEach((todo) => {
-      const createdlistItemEle = document.createElement("li");
-      const createParaEle = document.createElement("p");
-      createParaEle.innerHTML = todo;
-      createdlistItemEle.append(createParaEle);
+  let todos = JSON.parse(localStorage.getItem("todos")) || [];
+  todos.forEach(({ text, completed }) => {
+    const li = document.createElement("li");
+    li.className = "list-group-item d-flex justify-content-between align-items-center";
 
-      const createdEditBtn = document.createElement("button");
-      createdEditBtn.innerText = "Edit";
-      createdEditBtn.classList.add("btn", "editBtn");
-      createdlistItemEle.append(createdEditBtn);
+    const para = document.createElement("p");
+    para.className = "mb-0 flex-grow-1";
+    para.innerText = text;
 
-      const createdDeleteBtn = document.createElement("button");
-      createdDeleteBtn.innerText = "Delete";
-      createdDeleteBtn.classList.add("btn", "deleteBtn");
-      createdlistItemEle.append(createdDeleteBtn);
+    if (completed) para.classList.add("text-decoration-line-through");
 
-      todoList.appendChild(createdlistItemEle);
-    });
-  }
+    const completeBtn = document.createElement("button");
+    completeBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
+    completeBtn.className = "btn btn-sm btn-outline-success me-2";
+
+    const editBtn = document.createElement("button");
+    editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
+    editBtn.className = "btn btn-sm btn-outline-primary me-2";
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
+    deleteBtn.className = "btn btn-sm btn-outline-danger";
+
+    li.appendChild(para);
+    li.appendChild(completeBtn);
+    li.appendChild(editBtn);
+    li.appendChild(deleteBtn);
+
+    todoList.appendChild(li);
+  });
 };
 
-// Function to delete todo from localstorage
-const deleteLocalTodos = (todo) => {
-  let todos;
-  if (localStorage.getItem("todos") === null) {
-    todos = [];
-  } else {
-    todos = JSON.parse(localStorage.getItem("todos"));
-  }
-
-  let todoText = todo.children[0].innerHTML;
-  let todoIndex = todos.indexOf(todoText);
-  todos.splice(todoIndex, 1);
-  localStorage.setItem("todos", JSON.stringify(todos));
-  // console.log(todoIndex);
-};
-
-// function to edit todo from localstorage
-const editLocalTodos = (todo) => {
-  let todos = JSON.parse(localStorage.getItem("todos"));
-  let todoIndex = todos.indexOf(todo);
-  todos[todoIndex] = inputBox.value;
+const deleteLocalTodos = (todoText) => {
+  let todos = JSON.parse(localStorage.getItem("todos")) || [];
+  todos = todos.filter((todo) => todo.text !== todoText);
   localStorage.setItem("todos", JSON.stringify(todos));
 };
 
+const editLocalTodos = (oldText, newText) => {
+  let todos = JSON.parse(localStorage.getItem("todos")) || [];
+  const index = todos.findIndex(todo => todo.text === oldText);
+  if (index !== -1) {
+    todos[index].text = newText;
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }
+};
+
+const updateCompletedState = (todoText, isCompleted) => {
+  let todos = JSON.parse(localStorage.getItem("todos")) || [];
+  const index = todos.findIndex(todo => todo.text === todoText);
+  if (index !== -1) {
+    todos[index].completed = isCompleted;
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }
+};
+
+// Load todos on page load
 document.addEventListener("DOMContentLoaded", getLocalTodos);
+
+

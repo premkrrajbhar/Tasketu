@@ -1,143 +1,141 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-padding-top: 56px;
+  overflow-x: hidden;
 }
 
 body {
-  background: url("../image/bg-img.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
+  overflow-x: hidden;
 }
 
-.container {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  padding: 20px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
 }
 
-.input-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+#home {
+  background: linear-gradient(135deg, #f1d7dc, #f4c7d5);
 }
 
-h1 {
-  font-size: 24px;
+#home a {
+  background-color: #b0299b;
 }
 
-#para {
-  font-weight: lighter;
-  opacity: 0.8;
-  margin-bottom: 20px;
-  font-size: 14px;
+#home a:hover {
+  background-color: #9f228c;
 }
 
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.8);
-  color: #333;
+#features {
+  background: linear-gradient(135deg, #f2b5c7, #f6e1e5);
 }
 
-#addBtn {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background: #ffcc00;
-  color: #333;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+#features .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#addBtn:hover {
-  background: #ffdb4d;
+#features .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.todoList {
-  list-style: none;
-  max-height: 300px;
-  overflow-y: auto;
-  margin-top: 15px;
-  padding-right: 5px;
+#features i {
+  color: #b0299b;
 }
 
-.todoList::-webkit-scrollbar {
-  width: 6px;
+#features i:hover {
+  color: #9f228c;
 }
 
-.todoList::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+#about {
+  background: linear-gradient(135deg, #f6e1e5, #f2b5c7);
 }
 
-.todoList li {
-  background: #f1f1f1;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: 0.3s;
+#howtasketuworks {
+  background: linear-gradient(135deg, #f2b5c7, #f6e1e5);
 }
 
-.todoList li:hover {
-  background: #eaeaea;
+#manageyourtask {
+  background: linear-gradient(135deg, #f6e1e5, #f2b5c7);
 }
 
-.todoList li p {
-  flex: 1;
-  text-align: left;
-  font-size: 16px;
-  color: #333;
-  margin-right: 10px;
+#manageyourtask #addBtn {
+  background-color: #b0299b;
 }
 
-.todoList li .buttons {
-  display: flex;
-  gap: 8px;
+#manageyourtask #warnPara {
+  color: #b0299b;
 }
 
-.btn {
-  background: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 5px;
-  transition: 0.3s;
+#manageyourtask #todoList li {
+  color: black;
+  background: linear-gradient(135deg, #e9b8c1, #f2b5c7);
 }
 
-.editBtn {
-  color: #28a745;
+#manageyourtask #todoList li:hover {
+  color: black;
+  background: linear-gradient(135deg, #edb3be, #eaacbf);
 }
 
-.editBtn:hover {
-  color: #218838;
+#manageyourtask #addBtn:hover {
+  background-color: #9f228c;
 }
 
-.deleteBtn {
-  color: #dc3545;
+#testimonials {
+  background: linear-gradient(135deg, #f2b5c7, #f6e1e5);
 }
 
-.deleteBtn:hover {
-  color: #c82333;
+#testimonials .card {
+  max-width: 600px;
+}
+
+
+#testimonials .card-body {
+  background: linear-gradient(135deg, #f1d7dc, #f4c7d5);
+}
+
+#faq {
+  background: linear-gradient(135deg, #f6e1e5, #f2b5c7);
+}
+
+#faq .accordion-button {
+  background: linear-gradient(135deg, #f4c7d5, #f1d7dc);
+  color: black;
+}
+
+#faq .accordion-body {
+  background: linear-gradient(135deg, #f8d9de, #f3c9d5);
+
+}
+
+
+footer {
+  background: linear-gradient(135deg, #ef5873, #cb9dab);
+}
+
+footer .customSize {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 992px) {
+  .customCardWidth {
+    width: 18rem;
+  }
+}
+
+
+/* media queries for testimonial in smaller devices */
+@media (max-width: 576px) {
+  #testimonials .carousel-item .card-body {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+
+  #testimonials .carousel-item .card-body::-webkit-scrollbar {
+    display: none;
+  }
+
 }
