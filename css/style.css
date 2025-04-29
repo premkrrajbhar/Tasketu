@@ -37,6 +37,11 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#features .card-body {
+  background: linear-gradient(135deg, #f1d7dc, #f4c7d5);
+}
+
+
 #features .card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
