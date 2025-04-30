@@ -16,6 +16,10 @@ body {
   backdrop-filter: blur(15px);
 }
 
+.navbar .nav-link:hover {
+  text-decoration: underline;
+} 
+
 #home {
   background: linear-gradient(135deg, #f1d7dc, #f4c7d5);
 }
