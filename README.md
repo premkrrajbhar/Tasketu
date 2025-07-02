@@ -40,39 +40,6 @@ Check out the app live here: **[Tasketu](https://premkrrajbhar.github.io/Tasketu
 - **Step 4:** Click the 'Delete' icon to remove a task.
 - **Step 5:** Click the check icon to mark a task as finished.
 
-## 📂 Project Structure
-
-```
-├── LICENSE
-├── README.md
-├── assets
-│   ├── favicon
-│   │   └── tasketu-favicon.png
-│   ├── images
-│   │   ├── Testimonial-User
-│   │   │   ├── user-1.jpg
-│   │   │   ├── user-2.jpg
-│   │   │   ├── user-3.jpg
-│   │   │   ├── user-4.jpg
-│   │   │   ├── user-5.jpg
-│   │   │   ├── user-6.jpg
-│   │   │   ├── user-7.jpg
-│   │   │   └── user-8.jpg
-│   │   └── img-1.jpg
-│   ├── logo
-│   │   └── tasketu-logo.png
-│   ├── media
-│   │   └── tasketu-tutorial.mp4
-│   └── screenshot
-│       └── screenshot.png
-├── css
-│   └── style.css
-├── index.html
-└── script
-    └── script.js
-
-```
-
 ## 📥 How to Run Locally
 
 - Step 1: Clone the repository:
