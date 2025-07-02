@@ -1,0 +1,11 @@
+# Third-party CSS (excluded from GitHub language stats)
+styles/aos.css linguist-vendored
+styles/bootstrap.min.css linguist-vendored
+styles/fontawesome.css linguist-vendored
+
+# Third-party JS (excluded from GitHub language stats)
+scripts/aos.js linguist-vendored
+scripts/bootstrap.bundle.min.js linguist-vendored
+
+# Third--party Fonts (excluded from Github language stats)
+webfonts/** linguist-vendored
