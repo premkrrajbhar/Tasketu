@@ -1,0 +1,150 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-padding-top: 56px;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+#home {
+  background: linear-gradient(135deg, #f1d7dc, #f4c7d5);
+}
+
+#home a {
+  background-color: #b0299b;
+}
+
+#home a:hover {
+  background-color: #9f228c;
+}
+
+#features {
+  background: linear-gradient(135deg, #f2b5c7, #f6e1e5);
+}
+
+#features .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#features .card-body {
+  background: linear-gradient(135deg, #f1d7dc, #f4c7d5);
+}
+
+
+#features .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#features i {
+  color: #b0299b;
+}
+
+#features i:hover {
+  color: #9f228c;
+}
+
+#about {
+  background: linear-gradient(135deg, #f6e1e5, #f2b5c7);
+}
+
+#howtasketuworks {
+  background: linear-gradient(135deg, #f2b5c7, #f6e1e5);
+}
+
+#manageyourtask {
+  background: linear-gradient(135deg, #f6e1e5, #f2b5c7);
+}
+
+#manageyourtask #addBtn {
+  background-color: #b0299b;
+}
+
+#manageyourtask #warnPara {
+  color: #b0299b;
+}
+
+#manageyourtask #todoList li {
+  color: black;
+  background: linear-gradient(135deg, #e9b8c1, #f2b5c7);
+}
+
+#manageyourtask #todoList li:hover {
+  color: black;
+  background: linear-gradient(135deg, #edb3be, #eaacbf);
+}
+
+#manageyourtask #addBtn:hover {
+  background-color: #9f228c;
+}
+
+#testimonials {
+  background: linear-gradient(135deg, #f2b5c7, #f6e1e5);
+}
+
+#testimonials .card {
+  max-width: 600px;
+}
+
+
+#testimonials .card-body {
+  background: linear-gradient(135deg, #f1d7dc, #f4c7d5);
+}
+
+#faq {
+  background: linear-gradient(135deg, #f6e1e5, #f2b5c7);
+}
+
+#faq .accordion-button {
+  background: linear-gradient(135deg, #f4c7d5, #f1d7dc);
+  color: black;
+}
+
+#faq .accordion-body {
+  background: linear-gradient(135deg, #f8d9de, #f3c9d5);
+
+}
+
+
+footer {
+  background: linear-gradient(135deg, #ef5873, #cb9dab);
+}
+
+footer .customSize {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 992px) {
+  .customCardWidth {
+    width: 18rem;
+  }
+}
+
+
+/* media queries for testimonial in smaller devices */
+@media (max-width: 576px) {
+  #testimonials .carousel-item .card-body {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+
+  #testimonials .carousel-item .card-body::-webkit-scrollbar {
+    display: none;
+  }
+
+}
