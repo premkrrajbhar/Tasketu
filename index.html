@@ -6,33 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tasketu</title>
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/favicon/tasketu-favicon.png" type="image/x-icon">
+  <!-- ============== Favicon ============== -->
+  <link rel="shortcut icon" href="assets/favicon/tasketu-favicon.png" type="image/png">
 
-  <!-- Meta Tags -->
+  <!-- ============== Meta Tags ============== -->
   <meta name="description"
     content="Tasketu is a simple task management app to help you organize and track your tasks easily.">
   <meta name="keywords" content="task management, to-do list, productivity, task tracker, organize tasks">
   <meta name="robots" content="index, follow">
 
-  <!-- AOS CDN CS link -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- ============== AOS CSS ============== -->
+  <link rel="stylesheet" href="styles/aos.css">
 
-  <!-- Bootstrap CDN CS link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!-- ============== Bootstrap CSS ============== -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
 
-  <!-- Font Awesome CDN link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ============== Fontawesome CSS ============== -->
+  <link rel="stylesheet" href="styles/fontawesome.css">
 
-  <!-- Custom CSS link -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- ============== Custom CSS ============== -->
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-  <!-- Header section -->
+
+  <!-- =================================== Header Section Start =================================== -->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
@@ -74,186 +72,199 @@
       </div>
     </nav>
   </header>
+  <!-- =================================== Header Section End =================================== -->
 
-  <!-- Home section -->
-  <section id="home" class="text-center py-5 min-vh-100 d-flex align-content-center align-items-center text-black">
-    <div class="container pt-5">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-sm-12 col-md-3" data-aos="zoom-out" data-aos-duration="1300">
-          <!-- img -->
-          <img src="assets/images/img-1.jpg" class="img-fluid rounded-circle border border-2" alt="tasketu-logo">
 
-        </div>
-        <div class="col-12 col-sm-12 col-md-9">
-          <h1 class="fs-1 lh-lg fw-bolder mt-5" data-aos="fade-left" data-aos-duration="1000">Tasketu</h1>
-          <p class="fs-4 lh-lg" data-aos="fade-left" data-aos-duration="1000">Stay organized, stay productive, and never
-            miss a task again with
-            <strong>Tasketu</strong> – the simple,
-            efficient, and user-friendly to-do list website designed to help you keep track of your daily
-            tasks and goals.
-          </p>
-          <a href="#manageyourtask" class="btn btn-success fs-5 p-2 mt-5 border-0" data-aos="fade-right"
-            data-aos-duration="1000">Start for Free</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main>
+    <!-- =================================== Home Section Start =================================== -->
+    <section id="home" class="text-center py-5 min-vh-100 d-flex align-content-center align-items-center text-black">
+      <div class="container pt-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-sm-12 col-md-3" data-aos="zoom-out" data-aos-duration="1300">
+            <!-- img -->
+            <img src="assets/images/img-1.jpg" class="img-fluid rounded-circle border border-2" alt="tasketu-logo">
 
-  <!-- Feature section -->
-  <section id="features" class="text-center py-5 text-black">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Organize Your Life with
-            These Features</h2>
-          <p class="lh-lg fs-5 mb-5 lead" data-aos="zoom-in" data-aos-duration="1000">Tasketu is designed to simplify
-            task management with powerful,
-            user-friendly features. Whether
-            you're juggling multiple projects or tracking daily errands, our intuitive system helps you stay
-            on top of your schedule effortlessly. Set priorities, schedule deadlines, and access your tasks
-            anytime, anywhere—all within a sleek, responsive interface. With accessibility at the core,
-            Tasketu ensures a seamless experience, so you can focus on what truly matters.</p>
-        </div>
-
-        <div class="col-12">
-          <div class="row justify-content-center">
-
-            <div class="col-12 col-sm-12 col-md-3  mb-5 customCardWidth" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <h5 class="card-title fs-1"><i class="fa-solid fa-list-check"></i></h5>
-                  <h6 class="card-subtitle mb-2 text-black">Effortless Task Completion</h6>
-                  <p class="card-text text-black text-opacity-75">Quickly mark tasks as completed with
-                    a single click. Tasketu
-                    provides a clear visual indicator to help you track progress and maintain a
-                    focused, organized workflow.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-3 mb-5 customCardWidth" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <h5 class="card-title fs-1"><i class="fa-solid fa-file-pen"></i></h5>
-                  <h6 class="card-subtitle mb-2 text-black">Edit & Save Tasks Instantly</h6>
-                  <p class="card-text text-black text-opacity-75">Modify task descriptions and update
-                    details seamlessly in
-                    Tasketu. Every change is instantly saved, ensuring a smooth, uninterrupted
-                    workflow
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-3 mb-5 customCardWidth" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <h5 class="card-title fs-1"><i class="fa-solid fa-trash"></i></h5>
-                  <h6 class="card-subtitle mb-2 text-black">Smart Task Removal</h6>
-                  <p class="card-text text-black text-opacity-75">Keep your task list clean and
-                    organized with Tasketu’s easy
-                    deletion system. Remove completed or unnecessary tasks instantly for a
-                    clutter-free workspace.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-3 mb-5 customCardWidth" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <h5 class="card-title fs-1"><i class="fa-solid fa-lock"></i></h5>
-                  <h6 class="card-subtitle mb-2 text-black">Secure Task Persistence</h6>
-                  <p class="card-text text-black text-opacity-75">Stay organized effortlessly with
-                    Tasketu’s reliable task-saving
-                    system. Every update is stored instantly, ensuring a smooth and uninterrupted
-                    workflow
-                  </p>
-                </div>
-              </div>
-            </div>
-
+          </div>
+          <div class="col-12 col-sm-12 col-md-9">
+            <h1 class="fs-1 lh-lg fw-bolder mt-5" data-aos="fade-left" data-aos-duration="1000">Tasketu</h1>
+            <p class="fs-4 lh-lg" data-aos="fade-left" data-aos-duration="1000">Stay organized, stay productive, and
+              never
+              miss a task again with
+              <strong>Tasketu</strong> – the simple,
+              efficient, and user-friendly to-do list website designed to help you keep track of your daily
+              tasks and goals.
+            </p>
+            <a href="#manageyourtask" class="btn btn-success fs-5 p-2 mt-5 border-0" data-aos="fade-right"
+              data-aos-duration="1000">Start for Free</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- =================================== Home Section End =================================== -->
 
 
-  <!-- About section -->
-  <section id="about" class="text-center py-5 text-black">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12">
-          <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Our Mission at Tasketu
-          </h2>
-          <div class="lh-lg fs-5" data-aos="zoom-in" data-aos-duration="1000">
-            <p class="lead">At Tasketu, we believe that small steps lead to big achievements. Our mission is
-              to
-              empower you to organize your tasks, focus on what matters, and accomplish your goals with
-              clarity and ease.</p>
-            <p class="lead">We built Tasketu to be simple yet powerful — helping you plan your day, boost
-              your
-              productivity, and stay motivated, no matter how busy life gets.</p>
-            <p class="lead">Start your journey toward a more organized, stress-free life today with Tasketu
-              —
-              your companion for getting things done!</p>
+    <!-- =================================== Features Section Start =================================== -->
+    <section id="features" class="text-center py-5 text-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Organize Your Life with
+              These Features</h2>
+            <p class="lh-lg fs-5 mb-5 lead" data-aos="zoom-in" data-aos-duration="1000">Tasketu is designed to simplify
+              task management with powerful,
+              user-friendly features. Whether
+              you're juggling multiple projects or tracking daily errands, our intuitive system helps you stay
+              on top of your schedule effortlessly. Set priorities, schedule deadlines, and access your tasks
+              anytime, anywhere—all within a sleek, responsive interface. With accessibility at the core,
+              Tasketu ensures a seamless experience, so you can focus on what truly matters.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
+          <div class="col-12">
+            <div class="row justify-content-center">
 
-  <!-- how tasketu works section -->
-  <section id="howtasketuworks" class="text-center py-5 min-vh-100 text-black">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12">
-          <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Effortless Task
-            Management in Five Simple Steps</h2>
-          <p class="fs-5 mb-4 lead" data-aos="zoom-in" data-aos-duration="1000">Tasketu is designed for seamless
-            productivity, offering a structured and
-            intuitive approach to
-            task management. In just five simple steps, you can efficiently organize and track your to-dos
-            with ease.</p>
-          <div class="row d-flex">
-            <div class="col-12 col-sm-12 col-md-6 text-start" data-aos="fade-right" data-aos-duration="1000">
-              <p class="fs-5"><strong>Step 1: Add a Task</strong><br>Enter your task in the input field to
-                capture your
-                priorities instantly</p>
-              <p class="fs-5"><strong>Step 2: Save It to Your List </strong><br>Click <strong>Add</strong>
-                to store
-                your task, ensuring quick access whenever needed.
-              </p>
-              <p class="fs-5"><strong>Step 3: Edit Task Details </strong><br>Modify descriptions
-                effortlessly with the
-                <strong>Edit</strong> button to keep your tasks updated
-              </p>
-              <p class="fs-5"><strong>Step 4: Delete Tasks as Needed
-                </strong><br>Keep your workspace clean by removing completed or unnecessary tasks with a
-                single click.</p>
-              <p class="fs-5"><strong>Step 5: Mark as Complete
-                </strong><br>Click the check icon to mark a task as finished. It will be neatly crossed
-                out, helping you visually track what’s done and stay focused on what’s next.
-              </p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center" data-aos="zoom-in"
-              data-aos-duration="1000">
-              <div class="ratio ratio-16x9">
-                <video src="assets/media/tasketu-tutorial.mp4" autoplay muted loop></video>
+              <div class="col-12 col-sm-12 col-md-3  mb-5 customCardWidth" data-aos="zoom-in-up"
+                data-aos-duration="1000">
+                <div class="card h-100 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title fs-1"><i class="fa-solid fa-list-check"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-black">Effortless Task Completion</h6>
+                    <p class="card-text text-black text-opacity-75">Quickly mark tasks as completed with
+                      a single click. Tasketu
+                      provides a clear visual indicator to help you track progress and maintain a
+                      focused, organized workflow.
+                    </p>
+                  </div>
+                </div>
               </div>
+
+              <div class="col-12 col-sm-12 col-md-3 mb-5 customCardWidth" data-aos="zoom-in-up"
+                data-aos-duration="1000">
+                <div class="card h-100 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title fs-1"><i class="fa-solid fa-file-pen"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-black">Edit & Save Tasks Instantly</h6>
+                    <p class="card-text text-black text-opacity-75">Modify task descriptions and update
+                      details seamlessly in
+                      Tasketu. Every change is instantly saved, ensuring a smooth, uninterrupted
+                      workflow
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-3 mb-5 customCardWidth" data-aos="zoom-in-up"
+                data-aos-duration="1000">
+                <div class="card h-100 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title fs-1"><i class="fa-solid fa-trash"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-black">Smart Task Removal</h6>
+                    <p class="card-text text-black text-opacity-75">Keep your task list clean and
+                      organized with Tasketu’s easy
+                      deletion system. Remove completed or unnecessary tasks instantly for a
+                      clutter-free workspace.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-3 mb-5 customCardWidth" data-aos="zoom-in-up"
+                data-aos-duration="1000">
+                <div class="card h-100 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title fs-1"><i class="fa-solid fa-lock"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-black">Secure Task Persistence</h6>
+                    <p class="card-text text-black text-opacity-75">Stay organized effortlessly with
+                      Tasketu’s reliable task-saving
+                      system. Every update is stored instantly, ensuring a smooth and uninterrupted
+                      workflow
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- =================================== Features Section End =================================== -->
 
-  <!-- Manage Task -->
-  <main id="manageyourtask" class="py-5 text-center min-vh-100 text-black">
-    <section>
+
+    <!-- =================================== About Section Start =================================== -->
+    <section id="about" class="text-center py-5 text-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Our Mission at Tasketu
+            </h2>
+            <div class="lh-lg fs-5" data-aos="zoom-in" data-aos-duration="1000">
+              <p class="lead">At Tasketu, we believe that small steps lead to big achievements. Our mission is
+                to
+                empower you to organize your tasks, focus on what matters, and accomplish your goals with
+                clarity and ease.</p>
+              <p class="lead">We built Tasketu to be simple yet powerful — helping you plan your day, boost
+                your
+                productivity, and stay motivated, no matter how busy life gets.</p>
+              <p class="lead">Start your journey toward a more organized, stress-free life today with Tasketu
+                —
+                your companion for getting things done!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================== Home Section End =================================== -->
+
+
+    <!-- =================================== Tasketu Guide Section Start =================================== -->
+    <section id="howtasketuworks" class="text-center py-5 min-vh-100 text-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Effortless Task
+              Management in Five Simple Steps</h2>
+            <p class="fs-5 mb-4 lead" data-aos="zoom-in" data-aos-duration="1000">Tasketu is designed for seamless
+              productivity, offering a structured and
+              intuitive approach to
+              task management. In just five simple steps, you can efficiently organize and track your to-dos
+              with ease.</p>
+            <div class="row d-flex">
+              <div class="col-12 col-sm-12 col-md-6 text-start" data-aos="fade-right" data-aos-duration="1000">
+                <p class="fs-5"><strong>Step 1: Add a Task</strong><br>Enter your task in the input field to
+                  capture your
+                  priorities instantly</p>
+                <p class="fs-5"><strong>Step 2: Save It to Your List </strong><br>Click <strong>Add</strong>
+                  to store
+                  your task, ensuring quick access whenever needed.
+                </p>
+                <p class="fs-5"><strong>Step 3: Edit Task Details </strong><br>Modify descriptions
+                  effortlessly with the
+                  <strong>Edit</strong> button to keep your tasks updated
+                </p>
+                <p class="fs-5"><strong>Step 4: Delete Tasks as Needed
+                  </strong><br>Keep your workspace clean by removing completed or unnecessary tasks with a
+                  single click.</p>
+                <p class="fs-5"><strong>Step 5: Mark as Complete
+                  </strong><br>Click the check icon to mark a task as finished. It will be neatly crossed
+                  out, helping you visually track what’s done and stay focused on what’s next.
+                </p>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center" data-aos="zoom-in"
+                data-aos-duration="1000">
+                <div class="ratio ratio-16x9">
+                  <video src="assets/media/tasketu-tutorial.mp4" autoplay muted loop></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================== Tasketu Guide Section End =================================== -->
+
+
+    <!-- =================================== Manage Tasketu Section Start =================================== -->
+    <section id="manageyourtask" class="py-5 text-center min-vh-100 text-black">
       <div class="container">
         <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Stay Organized with Tasketu
         </h2>
@@ -275,307 +286,316 @@
         </div>
       </div>
     </section>
+    <!-- =================================== Manage Tasketu Section End =================================== -->
+
+
+    <!-- =================================== Testimonials Section Start =================================== -->
+    <section id="testimonials" class="py-5 text-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 text-center">
+            <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Loved by Users
+              Everywhere
+            </h2>
+            <p class="lead mb-5 pb-5" data-aos="zoom-in" data-aos-duration="1000">From busy professionals to students
+              and
+              everyday planners, Tasketu has
+              helped thousands stay on
+              top of their goals and organize their lives with ease. Discover why people everywhere are
+              choosing Tasketu to get things done — and love every step of the journey.</p>
+          </div>
+          <div class="col-12 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-1.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“Tasketu helps me focus on what really
+                          matters. I love
+                          how
+                          clean and intuitive it is — no distractions, just results.”</em></p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Daniel</h6>
+                      <p class="text-body-secondary"><em>~ Product Designer</em></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-2.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“With Tasketu, I finally feel in control of
+                          my day.
+                          It’s become my go-to tool for managing personal and work tasks.”</em>
+                      </p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Emily</h6>
+                      <p class="text-body-secondary"><em>~ Remote Developer</em></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-3.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“Tasketu has simplified my study life. I can
+                          manage
+                          assignments, track deadlines, and actually enjoy being productive.”</em>
+                      </p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Ethan</h6>
+                      <p class="text-body-secondary"><em>~ University Student</em></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-4.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“I’ve used a lot of to-do apps, but Tasketu
+                          stands out.
+                          It’s reliable, elegant, and keeps me organized without the stress.”</em>
+                      </p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Takumi</h6>
+                      <p class="text-body-secondary"><em>~ Marketing Coordinator</em></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-5.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“From feature planning to daily checklists,
+                          Tasketu fits perfectly into my workflow. I no longer miss a single
+                          deadline.”</em></p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Ren</h6>
+                      <p class="text-body-secondary"><em>~ Freelance Developer</em></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-6.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“Balancing study, part-time work, and life
+                          used to be overwhelming. Tasketu helps me stay focused and on top of
+                          everything.”</em></p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Sophia</h6>
+                      <p class="text-body-secondary"><em>~ College Student</em></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-7.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“Tasketu helps me plan my week, organize
+                          inventory tasks, and track goals — all in one place. Total game
+                          changer!”</em></p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Haruki</h6>
+                      <p class="text-body-secondary"><em>~ Software Engineer</em></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-black">
+                      <img src="assets/images/Testimonial-User/user-8.jpg" alt="User Photo" class="rounded-circle mb-3"
+                        width="60" height="60">
+                      <p class="card-text opacity-75"><em>“Studying abroad was overwhelming at first,
+                          but Tasketu helped me stay organized and stress-free.”</em></p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Aiko</h6>
+                      <p class="text-body-secondary"><em>~ University Student</em></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================== Testimonials Section End =================================== -->
+
+
+    <!-- =================================== FAQs Section Start =================================== -->
+    <section id="faq" class="text-center py-5 text-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Got Questions? We’ve
+              Got
+              Answers</h2>
+            <p class="lead mb-5" data-aos="zoom-in" data-aos-duration="1000">Got a question about Tasketu? You're in the
+              right place! Here, you'll find
+              answers to the most
+              common questions about using the app. Whether you're just getting started or looking for tips to
+              make the most of Tasketu, we've got you covered.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="col-lg-8 col-sm-10">
+            <div class="accordion" id="accordionExample">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    What is Tasketu?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    Tasketu is a simple yet powerful to-do list and task management tool designed to
+                    help you stay organized, focused, and productive. Whether you’re planning your day,
+                    managing projects, or tracking personal goals, Tasketu helps you get things done
+                    efficiently.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How do I create tasks in Tasketu?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    To create a task, type your task details into the input field then click the 'Add'
+                    button. Your task will be added immediately
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How do I edit a task Tasketu?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    To edit a task, click the 'Edit' icon on your saved task. The task details will
+                    appear in the input field, allowing you to make changes. Once you're done, click the
+                    'Save Edit' button to update the task.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How can I delete a task in Tasketu?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    To delete a task, simply click the "Delete" icon next to the task in your task
+                    list and the task will be removed permanently.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    How do I mark a task as complete in Tasketu?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    Simply click the check icon next to your task. The task will be visually marked with
+                    a strikethrough, indicating it has been completed and helping you keep track of your
+                    progress.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Will my tasks stay saved in tasketu if I reload or close the page?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    Yes, your tasks are safely saved on Tasketu. Reloading or closing the page won’t
+                    delete them—your tasks will still be there when you return.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Is my data secure on Tasketu?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    Yes, your data is secure on Tasketu. We do not share your information with any
+                    third-party companies or services.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Is Tasketu open source?
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    Yes! Tasketu’s code is open source, allowing anyone to inspect it for transparency
+                    and trustworthiness. You can check the full code <a href="https://github.com/premkrrajbhar/Tasketu"
+                      class="text-decoration-none text-black" target="_blank">here</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================================== FAQs Section End =================================== -->
   </main>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-5 text-black">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 text-center">
-          <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Loved by Users Everywhere
-          </h2>
-          <p class="lead mb-5 pb-5" data-aos="zoom-in" data-aos-duration="1000">From busy professionals to students and
-            everyday planners, Tasketu has
-            helped thousands stay on
-            top of their goals and organize their lives with ease. Discover why people everywhere are
-            choosing Tasketu to get things done — and love every step of the journey.</p>
-        </div>
-        <div class="col-12 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
-          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
 
-              <div class="carousel-item active">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-1.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“Tasketu helps me focus on what really
-                        matters. I love
-                        how
-                        clean and intuitive it is — no distractions, just results.”</em></p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Daniel</h6>
-                    <p class="text-body-secondary"><em>~ Product Designer</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-2.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“With Tasketu, I finally feel in control of
-                        my day.
-                        It’s become my go-to tool for managing personal and work tasks.”</em>
-                    </p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Emily</h6>
-                    <p class="text-body-secondary"><em>~ Remote Developer</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-3.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“Tasketu has simplified my study life. I can
-                        manage
-                        assignments, track deadlines, and actually enjoy being productive.”</em>
-                    </p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Ethan</h6>
-                    <p class="text-body-secondary"><em>~ University Student</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-4.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“I’ve used a lot of to-do apps, but Tasketu
-                        stands out.
-                        It’s reliable, elegant, and keeps me organized without the stress.”</em>
-                    </p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Takumi</h6>
-                    <p class="text-body-secondary"><em>~ Marketing Coordinator</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-5.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“From feature planning to daily checklists,
-                        Tasketu fits perfectly into my workflow. I no longer miss a single
-                        deadline.”</em></p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Ren</h6>
-                    <p class="text-body-secondary"><em>~ Freelance Developer</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-6.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“Balancing study, part-time work, and life
-                        used to be overwhelming. Tasketu helps me stay focused and on top of
-                        everything.”</em></p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Sophia</h6>
-                    <p class="text-body-secondary"><em>~ College Student</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-7.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“Tasketu helps me plan my week, organize
-                        inventory tasks, and track goals — all in one place. Total game
-                        changer!”</em></p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Haruki</h6>
-                    <p class="text-body-secondary"><em>~ Software Engineer</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-black">
-                    <img src="assets/images/Testimonial-User/user-8.jpg" alt="User Photo" class="rounded-circle mb-3"
-                      width="60" height="60">
-                    <p class="card-text opacity-75"><em>“Studying abroad was overwhelming at first,
-                        but Tasketu helped me stay organized and stress-free.”</em></p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Aiko</h6>
-                    <p class="text-body-secondary"><em>~ University Student</em></p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- FAQ section -->
-  <section id="faq" class="text-center py-5 text-black">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12">
-          <h2 class="mb-4 fs-1 lh-lg fw-semibold" data-aos="zoom-out" data-aos-duration="1000">Got Questions? We’ve Got
-            Answers</h2>
-          <p class="lead mb-5" data-aos="zoom-in" data-aos-duration="1000">Got a question about Tasketu? You're in the
-            right place! Here, you'll find
-            answers to the most
-            common questions about using the app. Whether you're just getting started or looking for tips to
-            make the most of Tasketu, we've got you covered.</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="col-lg-8 col-sm-10">
-          <div class="accordion" id="accordionExample">
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  What is Tasketu?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  Tasketu is a simple yet powerful to-do list and task management tool designed to
-                  help you stay organized, focused, and productive. Whether you’re planning your day,
-                  managing projects, or tracking personal goals, Tasketu helps you get things done
-                  efficiently.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How do I create tasks in Tasketu?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  To create a task, type your task details into the input field then click the 'Add'
-                  button. Your task will be added immediately
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  How do I edit a task Tasketu?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  To edit a task, click the 'Edit' icon on your saved task. The task details will
-                  appear in the input field, allowing you to make changes. Once you're done, click the
-                  'Save Edit' button to update the task.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  How can I delete a task in Tasketu?
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  To delete a task, simply click the "Delete" icon next to the task in your task
-                  list and the task will be removed permanently.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  How do I mark a task as complete in Tasketu?
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  Simply click the check icon next to your task. The task will be visually marked with
-                  a strikethrough, indicating it has been completed and helping you keep track of your
-                  progress.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  Will my tasks stay saved in tasketu if I reload or close the page?
-                </button>
-              </h2>
-              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  Yes, your tasks are safely saved on Tasketu. Reloading or closing the page won’t
-                  delete them—your tasks will still be there when you return.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                  Is my data secure on Tasketu?
-                </button>
-              </h2>
-              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  Yes, your data is secure on Tasketu. We do not share your information with any
-                  third-party companies or services.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                  Is Tasketu open source?
-                </button>
-              </h2>
-              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body text-start">
-                  Yes! Tasketu’s code is open source, allowing anyone to inspect it for transparency
-                  and trustworthiness. You can check the full code <a href="https://github.com/premkrrajbhar/Tasketu"
-                    class="text-decoration-none text-black" target="_blank">here</a>.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer section -->
+  <!-- =================================== Footer Section Start =================================== -->
   <footer class="pt-4 pb-1">
     <div class="container">
       <div class="row">
@@ -606,20 +626,20 @@
     </div>
 
   </footer>
+  <!-- =================================== Footer Section End =================================== -->
 
-  <!-- AOS CDN JS link and init -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- ============== AOS JS ============== -->
+  <script src="scripts/aos.js"></script>
   <script>
     AOS.init();
   </script>
 
-  <!-- Bootstrap CDN JS link -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
+  <!-- ============== Bootstrap JS ============== -->
+  <script src="scripts/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom JS link -->
-  <script src="script/script.js"></script>
+  <!-- ============== Custom JS ============== -->
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
